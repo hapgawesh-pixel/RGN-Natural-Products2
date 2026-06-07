@@ -1,0 +1,1940 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RGN Natural Products | 100% Natural Sri Lankan Herbal Products</title>
+    <meta name="description" content="RGN Natural Products - Premium Sri Lankan herbal leaf powders. Moringa, Curry Leaf, Vel Penela, Heen Bovitiya, and Katupila powders. 100% natural, hygienically processed.">
+    <meta name="keywords" content="Sri Lankan herbal products, moringa powder, curry leaf powder, natural herbs, RGN Natural Products">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* ============================================
+           RGN NATURAL PRODUCTS - COMPLETE STYLES
+           ============================================ */
+
+        /* CSS Variables - Premium Green & Gold Theme */
+        :root {
+            --primary-green: #1a5c3a;
+            --dark-green: #0d3d26;
+            --light-green: #2d8a5a;
+            --accent-green: #4caf7c;
+            --pale-green: #e8f5e9;
+            --gold: #c9a84c;
+            --gold-light: #e8d5a3;
+            --gold-dark: #a08030;
+            --white: #ffffff;
+            --off-white: #fafaf8;
+            --cream: #f5f0e6;
+            --text-dark: #1a1a1a;
+            --text-medium: #4a4a4a;
+            --text-light: #6b6b6b;
+            --shadow-soft: 0 4px 20px rgba(0,0,0,0.08);
+            --shadow-medium: 0 8px 30px rgba(0,0,0,0.12);
+            --shadow-gold: 0 4px 20px rgba(201,168,76,0.3);
+            --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        /* Reset & Base Styles */
+        *, *::before, *::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            font-size: 16px;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            color: var(--text-dark);
+            background: var(--off-white);
+            line-height: 1.7;
+            overflow-x: hidden;
+        }
+
+        h1, h2, h3, h4 {
+            font-family: 'Playfair Display', serif;
+            font-weight: 700;
+            line-height: 1.2;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+            transition: var(--transition);
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        /* ============================================
+           NAVIGATION
+           ============================================ */
+        .navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            background: rgba(255,255,255,0.95);
+            backdrop-filter: blur(20px);
+            border-bottom: 1px solid rgba(201,168,76,0.2);
+            transition: var(--transition);
+        }
+
+        .navbar.scrolled {
+            box-shadow: var(--shadow-soft);
+        }
+
+        .nav-container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 80px;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .logo-icon {
+            width: 50px;
+            height: 50px;
+            background: linear-gradient(135deg, var(--primary-green), var(--light-green));
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--gold);
+            font-size: 1.4rem;
+            border: 2px solid var(--gold);
+            box-shadow: var(--shadow-gold);
+        }
+
+        .logo-text {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--primary-green);
+            letter-spacing: 1px;
+        }
+
+        .logo-text span {
+            color: var(--gold);
+            font-weight: 400;
+            font-size: 0.85rem;
+            display: block;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            margin-top: -2px;
+        }
+
+        .nav-links {
+            display: flex;
+            align-items: center;
+            gap: 40px;
+            list-style: none;
+        }
+
+        .nav-links a {
+            font-weight: 500;
+            font-size: 0.95rem;
+            color: var(--text-medium);
+            position: relative;
+            padding: 5px 0;
+        }
+
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: linear-gradient(90deg, var(--gold), var(--primary-green));
+            transition: var(--transition);
+        }
+
+        .nav-links a:hover {
+            color: var(--primary-green);
+        }
+
+        .nav-links a:hover::after {
+            width: 100%;
+        }
+
+        .nav-cta {
+            background: linear-gradient(135deg, var(--primary-green), var(--light-green));
+            color: var(--white) !important;
+            padding: 10px 24px !important;
+            border-radius: 50px;
+            font-weight: 600 !important;
+            box-shadow: 0 4px 15px rgba(26,92,58,0.3);
+        }
+
+        .nav-cta::after {
+            display: none !important;
+        }
+
+        .nav-cta:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(26,92,58,0.4);
+        }
+
+        /* Mobile Menu Toggle */
+        .menu-toggle {
+            display: none;
+            flex-direction: column;
+            gap: 5px;
+            cursor: pointer;
+            padding: 5px;
+        }
+
+        .menu-toggle span {
+            width: 28px;
+            height: 2px;
+            background: var(--primary-green);
+            transition: var(--transition);
+            border-radius: 2px;
+        }
+
+        .menu-toggle.active span:nth-child(1) {
+            transform: rotate(45deg) translate(5px, 5px);
+        }
+
+        .menu-toggle.active span:nth-child(2) {
+            opacity: 0;
+        }
+
+        .menu-toggle.active span:nth-child(3) {
+            transform: rotate(-45deg) translate(5px, -5px);
+        }
+
+        /* ============================================
+           HERO SECTION
+           ============================================ */
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            background: linear-gradient(135deg, var(--dark-green) 0%, var(--primary-green) 50%, #1a4a2e 100%);
+            position: relative;
+            overflow: hidden;
+            padding-top: 80px;
+        }
+
+        /* Decorative leaf pattern overlay */
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M30 5c-5 10-15 15-15 25s10 15 15 25c5-10 15-15 15-25s-10-15-15-25z' fill='none' stroke='rgba(201,168,76,0.08)' stroke-width='1'/%3E%3C/svg%3E");
+            opacity: 0.6;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 60px 24px;
+        }
+
+        .hero-text {
+            color: var(--white);
+        }
+
+        .hero-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: rgba(201,168,76,0.2);
+            border: 1px solid rgba(201,168,76,0.4);
+            padding: 8px 20px;
+            border-radius: 50px;
+            font-size: 0.85rem;
+            font-weight: 500;
+            color: var(--gold-light);
+            margin-bottom: 30px;
+            backdrop-filter: blur(10px);
+        }
+
+        .hero-badge i {
+            color: var(--gold);
+        }
+
+        .hero h1 {
+            font-size: clamp(2.5rem, 5vw, 4rem);
+            margin-bottom: 20px;
+            color: var(--white);
+            text-shadow: 0 2px 20px rgba(0,0,0,0.2);
+        }
+
+        .hero h1 .highlight {
+            color: var(--gold);
+            position: relative;
+        }
+
+        .hero-tagline {
+            font-size: 1.25rem;
+            color: rgba(255,255,255,0.85);
+            margin-bottom: 40px;
+            font-weight: 300;
+            max-width: 500px;
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 16px;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            padding: 16px 36px;
+            border-radius: 50px;
+            font-weight: 600;
+            font-size: 1rem;
+            transition: var(--transition);
+            cursor: pointer;
+            border: none;
+            font-family: 'Inter', sans-serif;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, var(--gold), var(--gold-dark));
+            color: var(--dark-green);
+            box-shadow: 0 4px 20px rgba(201,168,76,0.4);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 30px rgba(201,168,76,0.5);
+        }
+
+        .btn-secondary {
+            background: transparent;
+            color: var(--white);
+            border: 2px solid rgba(255,255,255,0.3);
+        }
+
+        .btn-secondary:hover {
+            background: rgba(255,255,255,0.1);
+            border-color: var(--gold);
+            transform: translateY(-3px);
+        }
+
+        .btn-whatsapp {
+            background: linear-gradient(135deg, #25d366, #128c7e);
+            color: var(--white);
+            box-shadow: 0 4px 20px rgba(37,211,102,0.3);
+        }
+
+        .btn-whatsapp:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 30px rgba(37,211,102,0.4);
+        }
+
+        /* Hero Image Area */
+        .hero-visual {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .hero-circle {
+            width: 400px;
+            height: 400px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, rgba(201,168,76,0.15), rgba(255,255,255,0.05));
+            border: 2px solid rgba(201,168,76,0.3);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            animation: float 6s ease-in-out infinite;
+        }
+
+        .hero-circle-inner {
+            width: 320px;
+            height: 320px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, rgba(255,255,255,0.1), rgba(201,168,76,0.1));
+            border: 1px solid rgba(201,168,76,0.2);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .hero-circle-inner i {
+            font-size: 5rem;
+            color: var(--gold);
+            opacity: 0.8;
+        }
+
+        .hero-circle-inner .brand-name {
+            font-family: 'Playfair Display', serif;
+            font-size: 2rem;
+            color: var(--gold);
+            letter-spacing: 3px;
+        }
+
+        .hero-circle-inner .brand-sub {
+            font-size: 0.85rem;
+            color: rgba(255,255,255,0.7);
+            letter-spacing: 4px;
+            text-transform: uppercase;
+        }
+
+        /* Floating elements */
+        .float-leaf {
+            position: absolute;
+            color: var(--gold);
+            opacity: 0.2;
+            animation: floatLeaf 8s ease-in-out infinite;
+        }
+
+        .float-leaf:nth-child(1) { top: 10%; left: 10%; font-size: 2rem; animation-delay: 0s; }
+        .float-leaf:nth-child(2) { top: 60%; right: 5%; font-size: 1.5rem; animation-delay: 2s; }
+        .float-leaf:nth-child(3) { bottom: 20%; left: 20%; font-size: 1.8rem; animation-delay: 4s; }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-20px); }
+        }
+
+        @keyframes floatLeaf {
+            0%, 100% { transform: translateY(0) rotate(0deg); }
+            50% { transform: translateY(-30px) rotate(10deg); }
+        }
+
+        /* Scroll indicator */
+        .scroll-indicator {
+            position: absolute;
+            bottom: 30px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 8px;
+            color: rgba(255,255,255,0.6);
+            font-size: 0.8rem;
+            animation: bounce 2s infinite;
+        }
+
+        .scroll-indicator i {
+            font-size: 1.2rem;
+        }
+
+        @keyframes bounce {
+            0%, 100% { transform: translateX(-50%) translateY(0); }
+            50% { transform: translateX(-50%) translateY(10px); }
+        }
+
+        /* ============================================
+           SECTION STYLES (Shared)
+           ============================================ */
+        .section {
+            padding: 100px 0;
+            position: relative;
+        }
+
+        .section-header {
+            text-align: center;
+            max-width: 700px;
+            margin: 0 auto 60px;
+        }
+
+        .section-label {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            color: var(--gold-dark);
+            font-weight: 600;
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            margin-bottom: 16px;
+        }
+
+        .section-label i {
+            font-size: 0.7rem;
+        }
+
+        .section-title {
+            font-size: clamp(2rem, 4vw, 3rem);
+            color: var(--primary-green);
+            margin-bottom: 20px;
+        }
+
+        .section-title .accent {
+            color: var(--gold-dark);
+        }
+
+        .section-desc {
+            color: var(--text-light);
+            font-size: 1.1rem;
+            line-height: 1.8;
+        }
+
+        /* ============================================
+           ABOUT SECTION
+           ============================================ */
+        .about {
+            background: var(--white);
+        }
+
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+        }
+
+        .about-image {
+            position: relative;
+        }
+
+        .about-image-frame {
+            position: relative;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: var(--shadow-medium);
+        }
+
+        .about-image-frame::before {
+            content: '';
+            position: absolute;
+            top: -20px;
+            left: -20px;
+            right: 20px;
+            bottom: 20px;
+            border: 2px solid var(--gold);
+            border-radius: 20px;
+            z-index: -1;
+        }
+
+        .about-image-frame img {
+            width: 100%;
+            height: 450px;
+            object-fit: cover;
+            transition: var(--transition);
+        }
+
+        .about-image-frame:hover img {
+            transform: scale(1.05);
+        }
+
+        .about-content h3 {
+            font-size: 2rem;
+            color: var(--primary-green);
+            margin-bottom: 20px;
+        }
+
+        .about-content p {
+            color: var(--text-medium);
+            margin-bottom: 20px;
+            font-size: 1.05rem;
+        }
+
+        .about-features {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .about-feature {
+            display: flex;
+            align-items: flex-start;
+            gap: 12px;
+        }
+
+        .about-feature i {
+            width: 40px;
+            height: 40px;
+            min-width: 40px;
+            background: linear-gradient(135deg, var(--pale-green), var(--white));
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--primary-green);
+            font-size: 1rem;
+            border: 1px solid rgba(26,92,58,0.1);
+        }
+
+        .about-feature span {
+            font-weight: 600;
+            color: var(--text-dark);
+            font-size: 0.95rem;
+            padding-top: 8px;
+        }
+
+        /* ============================================
+           PRODUCTS SECTION
+           ============================================ */
+        .products {
+            background: linear-gradient(180deg, var(--off-white) 0%, var(--cream) 100%);
+        }
+
+        .products-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+        }
+
+        .product-card {
+            background: var(--white);
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: var(--shadow-soft);
+            transition: var(--transition);
+            position: relative;
+            border: 1px solid rgba(201,168,76,0.1);
+        }
+
+        .product-card:hover {
+            transform: translateY(-10px);
+            box-shadow: var(--shadow-medium), 0 20px 40px rgba(26,92,58,0.1);
+        }
+
+        .product-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, var(--gold), var(--primary-green));
+            opacity: 0;
+            transition: var(--transition);
+        }
+
+        .product-card:hover::before {
+            opacity: 1;
+        }
+
+        .product-image {
+            height: 220px;
+            background: linear-gradient(135deg, var(--pale-green), #d4edda);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .product-image i {
+            font-size: 4rem;
+            color: var(--primary-green);
+            opacity: 0.7;
+            transition: var(--transition);
+        }
+
+        .product-card:hover .product-image i {
+            transform: scale(1.1);
+            opacity: 1;
+        }
+
+        .product-badge {
+            position: absolute;
+            top: 16px;
+            right: 16px;
+            background: linear-gradient(135deg, var(--gold), var(--gold-dark));
+            color: var(--white);
+            padding: 6px 14px;
+            border-radius: 50px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            box-shadow: 0 2px 10px rgba(201,168,76,0.3);
+        }
+
+        .product-info {
+            padding: 28px;
+        }
+
+        .product-info h3 {
+            font-size: 1.3rem;
+            color: var(--primary-green);
+            margin-bottom: 10px;
+        }
+
+        .product-info p {
+            color: var(--text-light);
+            font-size: 0.95rem;
+            margin-bottom: 20px;
+            line-height: 1.6;
+        }
+
+        .product-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            color: var(--primary-green);
+            font-weight: 600;
+            font-size: 0.9rem;
+            padding: 10px 0;
+            position: relative;
+        }
+
+        .product-btn::after {
+            content: '';
+            position: absolute;
+            bottom: 8px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--gold);
+            transition: var(--transition);
+        }
+
+        .product-card:hover .product-btn::after {
+            width: 100%;
+        }
+
+        /* ============================================
+           BENEFITS SECTION
+           ============================================ */
+        .benefits {
+            background: var(--primary-green);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .benefits::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M20 0c-3 7-10 10-10 17s7 10 10 17c3-7 10-10 10-17s-7-10-10-17z' fill='none' stroke='rgba(201,168,76,0.1)' stroke-width='1'/%3E%3C/svg%3E");
+        }
+
+        .benefits .section-title,
+        .benefits .section-desc {
+            color: var(--white);
+        }
+
+        .benefits .section-label {
+            color: var(--gold-light);
+        }
+
+        .benefits-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 30px;
+            position: relative;
+            z-index: 2;
+        }
+
+        .benefit-card {
+            background: rgba(255,255,255,0.08);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(201,168,76,0.2);
+            border-radius: 20px;
+            padding: 40px 30px;
+            text-align: center;
+            transition: var(--transition);
+        }
+
+        .benefit-card:hover {
+            background: rgba(255,255,255,0.12);
+            transform: translateY(-5px);
+            border-color: rgba(201,168,76,0.4);
+        }
+
+        .benefit-icon {
+            width: 70px;
+            height: 70px;
+            background: linear-gradient(135deg, rgba(201,168,76,0.2), rgba(201,168,76,0.1));
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 24px;
+            border: 2px solid rgba(201,168,76,0.3);
+        }
+
+        .benefit-icon i {
+            font-size: 1.8rem;
+            color: var(--gold);
+        }
+
+        .benefit-card h3 {
+            color: var(--white);
+            font-size: 1.2rem;
+            margin-bottom: 12px;
+        }
+
+        .benefit-card p {
+            color: rgba(255,255,255,0.7);
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+
+        /* ============================================
+           CONTACT SECTION
+           ============================================ */
+        .contact {
+            background: var(--white);
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: start;
+        }
+
+        .contact-info h3 {
+            font-size: 1.8rem;
+            color: var(--primary-green);
+            margin-bottom: 20px;
+        }
+
+        .contact-info > p {
+            color: var(--text-light);
+            margin-bottom: 40px;
+            font-size: 1.05rem;
+        }
+
+        .contact-methods {
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+        }
+
+        .contact-method {
+            display: flex;
+            align-items: flex-start;
+            gap: 20px;
+            padding: 24px;
+            background: var(--off-white);
+            border-radius: 16px;
+            border: 1px solid rgba(201,168,76,0.15);
+            transition: var(--transition);
+        }
+
+        .contact-method:hover {
+            border-color: var(--gold);
+            box-shadow: var(--shadow-soft);
+            transform: translateX(5px);
+        }
+
+        .contact-method-icon {
+            width: 50px;
+            height: 50px;
+            min-width: 50px;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+        }
+
+        .contact-method-icon.whatsapp {
+            background: linear-gradient(135deg, #25d366, #128c7e);
+            color: var(--white);
+        }
+
+        .contact-method-icon.email {
+            background: linear-gradient(135deg, #ea4335, #c5221f);
+            color: var(--white);
+        }
+
+        .contact-method-icon.facebook {
+            background: linear-gradient(135deg, #1877f2, #0d5cb6);
+            color: var(--white);
+        }
+
+        .contact-method-info h4 {
+            font-size: 1.1rem;
+            color: var(--text-dark);
+            margin-bottom: 4px;
+        }
+
+        .contact-method-info p {
+            color: var(--text-light);
+            font-size: 0.95rem;
+        }
+
+        .contact-method-info a {
+            color: var(--primary-green);
+            font-weight: 600;
+        }
+
+        .contact-method-info a:hover {
+            color: var(--gold-dark);
+        }
+
+        /* Contact CTA Box */
+        .contact-cta-box {
+            background: linear-gradient(135deg, var(--primary-green), var(--dark-green));
+            border-radius: 24px;
+            padding: 50px;
+            color: var(--white);
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .contact-cta-box::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(201,168,76,0.1) 0%, transparent 70%);
+        }
+
+        .contact-cta-box h3 {
+            font-size: 1.8rem;
+            margin-bottom: 16px;
+            position: relative;
+        }
+
+        .contact-cta-box p {
+            color: rgba(255,255,255,0.8);
+            margin-bottom: 30px;
+            position: relative;
+        }
+
+        .contact-cta-box .btn {
+            position: relative;
+            font-size: 1.1rem;
+            padding: 18px 40px;
+        }
+
+        /* ============================================
+           FOOTER
+           ============================================ */
+        .footer {
+            background: var(--dark-green);
+            color: rgba(255,255,255,0.8);
+            padding: 80px 0 0;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr 1fr;
+            gap: 50px;
+            margin-bottom: 60px;
+        }
+
+        .footer-brand .logo-icon {
+            margin-bottom: 20px;
+        }
+
+        .footer-brand p {
+            line-height: 1.8;
+            margin-bottom: 24px;
+            font-size: 0.95rem;
+        }
+
+        .footer-social {
+            display: flex;
+            gap: 12px;
+        }
+
+        .footer-social a {
+            width: 42px;
+            height: 42px;
+            border-radius: 50%;
+            background: rgba(255,255,255,0.1);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--white);
+            font-size: 1rem;
+            transition: var(--transition);
+            border: 1px solid rgba(201,168,76,0.2);
+        }
+
+        .footer-social a:hover {
+            background: var(--gold);
+            color: var(--dark-green);
+            transform: translateY(-3px);
+        }
+
+        .footer-links h4 {
+            color: var(--gold);
+            font-size: 1.1rem;
+            margin-bottom: 24px;
+        }
+
+        .footer-links ul {
+            list-style: none;
+        }
+
+        .footer-links li {
+            margin-bottom: 12px;
+        }
+
+        .footer-links a {
+            color: rgba(255,255,255,0.7);
+            font-size: 0.95rem;
+            transition: var(--transition);
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .footer-links a:hover {
+            color: var(--gold);
+            padding-left: 5px;
+        }
+
+        .footer-links a i {
+            font-size: 0.7rem;
+            color: var(--gold);
+        }
+
+        .footer-contact p {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 16px;
+            font-size: 0.95rem;
+        }
+
+        .footer-contact i {
+            color: var(--gold);
+            width: 20px;
+        }
+
+        .footer-bottom {
+            border-top: 1px solid rgba(255,255,255,0.1);
+            padding: 30px 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 16px;
+        }
+
+        .footer-bottom p {
+            font-size: 0.9rem;
+            color: rgba(255,255,255,0.5);
+        }
+
+        .footer-bottom .heart {
+            color: var(--gold);
+        }
+
+        /* ============================================
+           ANIMATIONS & SCROLL EFFECTS
+           ============================================ */
+        .fade-in {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.8s ease, transform 0.8s ease;
+        }
+
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .fade-in-delay-1 { transition-delay: 0.1s; }
+        .fade-in-delay-2 { transition-delay: 0.2s; }
+        .fade-in-delay-3 { transition-delay: 0.3s; }
+        .fade-in-delay-4 { transition-delay: 0.4s; }
+        .fade-in-delay-5 { transition-delay: 0.5s; }
+
+        /* Stagger animation for grids */
+        .stagger-grid > * {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.6s ease, transform 0.6s ease;
+        }
+
+        .stagger-grid.visible > *:nth-child(1) { transition-delay: 0.1s; }
+        .stagger-grid.visible > *:nth-child(2) { transition-delay: 0.2s; }
+        .stagger-grid.visible > *:nth-child(3) { transition-delay: 0.3s; }
+        .stagger-grid.visible > *:nth-child(4) { transition-delay: 0.4s; }
+        .stagger-grid.visible > *:nth-child(5) { transition-delay: 0.5s; }
+
+        .stagger-grid.visible > * {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* ============================================
+           RESPONSIVE DESIGN
+           ============================================ */
+        @media (max-width: 992px) {
+            .hero-content {
+                grid-template-columns: 1fr;
+                text-align: center;
+                gap: 40px;
+            }
+
+            .hero-text {
+                order: 2;
+            }
+
+            .hero-visual {
+                order: 1;
+            }
+
+            .hero-tagline {
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            .hero-buttons {
+                justify-content: center;
+            }
+
+            .hero-circle {
+                width: 300px;
+                height: 300px;
+            }
+
+            .hero-circle-inner {
+                width: 240px;
+                height: 240px;
+            }
+
+            .about-grid,
+            .contact-grid {
+                grid-template-columns: 1fr;
+                gap: 50px;
+            }
+
+            .about-image {
+                order: 2;
+            }
+
+            .footer-grid {
+                grid-template-columns: 1fr 1fr;
+                gap: 40px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .menu-toggle {
+                display: flex;
+            }
+
+            .nav-links {
+                position: fixed;
+                top: 80px;
+                left: 0;
+                right: 0;
+                background: var(--white);
+                flex-direction: column;
+                gap: 0;
+                padding: 20px 0;
+                box-shadow: var(--shadow-medium);
+                transform: translateY(-100%);
+                opacity: 0;
+                visibility: hidden;
+                transition: var(--transition);
+            }
+
+            .nav-links.active {
+                transform: translateY(0);
+                opacity: 1;
+                visibility: visible;
+            }
+
+            .nav-links a {
+                padding: 16px 24px;
+                width: 100%;
+                text-align: center;
+                border-bottom: 1px solid rgba(0,0,0,0.05);
+            }
+
+            .nav-links a::after {
+                display: none;
+            }
+
+            .nav-cta {
+                margin: 16px 24px;
+                text-align: center;
+                justify-content: center;
+            }
+
+            .hero {
+                padding-top: 80px;
+            }
+
+            .hero h1 {
+                font-size: 2.2rem;
+            }
+
+            .hero-circle {
+                width: 250px;
+                height: 250px;
+            }
+
+            .hero-circle-inner {
+                width: 200px;
+                height: 200px;
+            }
+
+            .hero-circle-inner i {
+                font-size: 3.5rem;
+            }
+
+            .hero-circle-inner .brand-name {
+                font-size: 1.5rem;
+            }
+
+            .section {
+                padding: 70px 0;
+            }
+
+            .about-features {
+                grid-template-columns: 1fr;
+            }
+
+            .footer-grid {
+                grid-template-columns: 1fr;
+                text-align: center;
+                gap: 40px;
+            }
+
+            .footer-social {
+                justify-content: center;
+            }
+
+            .footer-bottom {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .contact-cta-box {
+                padding: 40px 30px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .hero h1 {
+                font-size: 1.8rem;
+            }
+
+            .hero-tagline {
+                font-size: 1rem;
+            }
+
+            .btn {
+                padding: 14px 28px;
+                font-size: 0.9rem;
+            }
+
+            .hero-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .hero-buttons .btn {
+                width: 100%;
+                max-width: 280px;
+                justify-content: center;
+            }
+
+            .section-title {
+                font-size: 1.8rem;
+            }
+
+            .product-info {
+                padding: 20px;
+            }
+
+            .benefit-card {
+                padding: 30px 20px;
+            }
+        }
+
+        /* ============================================
+           UTILITY CLASSES
+           ============================================ */
+        .text-center { text-align: center; }
+        .mt-20 { margin-top: 20px; }
+        .mb-20 { margin-bottom: 20px; }
+    </style>
+<base target="_blank">
+</head>
+<body>
+
+    <!-- ============================================
+         NAVIGATION BAR
+         ============================================ -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="logo">
+                <div class="logo-icon">
+                    <i class="fas fa-leaf"></i>
+                </div>
+                <div class="logo-text">
+                    RGN
+                    <span>Natural Products</span>
+                </div>
+            </a>
+
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#benefits">Benefits</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="https://wa.me/94770556913" class="nav-cta" target="_blank">
+                    <i class="fab fa-whatsapp"></i> Order Now
+                </a></li>
+            </ul>
+
+            <div class="menu-toggle" id="menuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ============================================
+         HERO SECTION
+         ============================================ -->
+    <section class="hero" id="home">
+        <div class="float-leaf"><i class="fas fa-leaf"></i></div>
+        <div class="float-leaf"><i class="fas fa-seedling"></i></div>
+        <div class="float-leaf"><i class="fas fa-spa"></i></div>
+
+        <div class="hero-content">
+            <div class="hero-text fade-in">
+                <div class="hero-badge">
+                    <i class="fas fa-certificate"></i>
+                    Premium Sri Lankan Quality
+                </div>
+                <h1>
+                    Nature's Best<br>
+                    <span class="highlight">In Every Leaf</span>
+                </h1>
+                <p class="hero-tagline">
+                    100% Natural Sri Lankan Herbal Products — hygienically processed and packaged to preserve nature's purity and potency.
+                </p>
+                <div class="hero-buttons">
+                    <a href="https://wa.me/94770556913" class="btn btn-whatsapp" target="_blank">
+                        <i class="fab fa-whatsapp"></i>
+                        Order on WhatsApp
+                    </a>
+                    <a href="#contact" class="btn btn-secondary">
+                        <i class="fas fa-envelope"></i>
+                        Contact Us
+                    </a>
+                </div>
+            </div>
+
+            <div class="hero-visual fade-in fade-in-delay-2">
+                <div class="hero-circle">
+                    <div class="hero-circle-inner">
+                        <i class="fas fa-leaf"></i>
+                        <div class="brand-name">RGN</div>
+                        <div class="brand-sub">Natural Products</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <a href="#about" class="scroll-indicator">
+            <span>Scroll Down</span>
+            <i class="fas fa-chevron-down"></i>
+        </a>
+    </section>
+
+    <!-- ============================================
+         ABOUT US SECTION
+         ============================================ -->
+    <section class="section about" id="about">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-image fade-in">
+                    <div class="about-image-frame">
+                        <img src="https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?w=800&q=80" alt="Natural herbal leaves and powders from Sri Lanka">
+                    </div>
+                </div>
+
+                <div class="about-content fade-in fade-in-delay-2">
+                    <div class="section-label">
+                        <i class="fas fa-leaf"></i>
+                        About Us
+                    </div>
+                    <h3>Pure Nature, Perfected by Tradition</h3>
+                    <p>
+                        RGN Natural Products is a trusted Sri Lankan brand dedicated to bringing you the finest herbal leaf powders sourced from the lush, fertile landscapes of our island nation. We specialize in hygienically processed and carefully packaged natural products that retain their nutritional value and authentic flavor.
+                    </p>
+                    <p>
+                        Every product we offer is a testament to our commitment to <strong>quality, purity, and natural ingredients</strong>. From the careful selection of raw herbs to our state-of-the-art processing and packaging, we ensure that what reaches your hands is nothing but the best nature has to offer.
+                    </p>
+
+                    <div class="about-features">
+                        <div class="about-feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>100% Natural & Organic</span>
+                        </div>
+                        <div class="about-feature">
+                            <i class="fas fa-shield-alt"></i>
+                            <span>Hygienic Processing</span>
+                        </div>
+                        <div class="about-feature">
+                            <i class="fas fa-award"></i>
+                            <span>Premium Quality Assured</span>
+                        </div>
+                        <div class="about-feature">
+                            <i class="fas fa-truck"></i>
+                            <span>Islandwide Delivery</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         PRODUCTS SECTION
+         ============================================ -->
+    <section class="section products" id="products">
+        <div class="container">
+            <div class="section-header fade-in">
+                <div class="section-label">
+                    <i class="fas fa-leaf"></i>
+                    Our Products
+                </div>
+                <h2 class="section-title">
+                    Premium Herbal <span class="accent">Leaf Powders</span>
+                </h2>
+                <p class="section-desc">
+                    Discover our range of carefully crafted herbal powders, each packed with the natural goodness of Sri Lankan herbs.
+                </p>
+            </div>
+
+            <div class="products-grid stagger-grid" id="productsGrid">
+                <!-- Product 1: Moringa Leaf Powder -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <i class="fas fa-leaf"></i>
+                        <span class="product-badge">Best Seller</span>
+                    </div>
+                    <div class="product-info">
+                        <h3>Moringa Leaf Powder</h3>
+                        <p>Known as the "Miracle Tree," our Moringa powder is rich in vitamins, minerals, and antioxidants. Supports immunity, energy, and overall wellness.</p>
+                        <a href="https://wa.me/94770556913?text=Hi!%20I'm%20interested%20in%20Moringa%20Leaf%20Powder" class="product-btn" target="_blank">
+                            Order Now <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Product 2: Curry Leaf Powder -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <i class="fas fa-mortar-pestle"></i>
+                    </div>
+                    <div class="product-info">
+                        <h3>Curry Leaf Powder</h3>
+                        <p>A staple in Sri Lankan cuisine with powerful health benefits. Supports hair health, digestion, and blood sugar management naturally.</p>
+                        <a href="https://wa.me/94770556913?text=Hi!%20I'm%20interested%20in%20Curry%20Leaf%20Powder" class="product-btn" target="_blank">
+                            Order Now <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Product 3: Vel Penela Powder -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <i class="fas fa-spa"></i>
+                    </div>
+                    <div class="product-info">
+                        <h3>Vel Penela Powder</h3>
+                        <p>A traditional Sri Lankan herbal remedy known for its medicinal properties. Used in Ayurvedic practices for centuries for its healing benefits.</p>
+                        <a href="https://wa.me/94770556913?text=Hi!%20I'm%20interested%20in%20Vel%20Penela%20Powder" class="product-btn" target="_blank">
+                            Order Now <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Product 4: Heen Bovitiya Powder -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <i class="fas fa-seedling"></i>
+                    </div>
+                    <div class="product-info">
+                        <h3>Heen Bovitiya Powder</h3>
+                        <p>Prized in traditional Sri Lankan medicine for its therapeutic properties. Supports digestive health and overall vitality.</p>
+                        <a href="https://wa.me/94770556913?text=Hi!%20I'm%20interested%20in%20Heen%20Bovitiya%20Powder" class="product-btn" target="_blank">
+                            Order Now <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Product 5: Katupila Powder -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <i class="fas fa-heart"></i>
+                        <span class="product-badge">Popular</span>
+                    </div>
+                    <div class="product-info">
+                        <h3>Katupila Powder</h3>
+                        <p>A revered herb in Sri Lankan Ayurveda, known for its powerful health-promoting properties. Supports immune function and natural detoxification.</p>
+                        <a href="https://wa.me/94770556913?text=Hi!%20I'm%20interested%20in%20Katupila%20Powder" class="product-btn" target="_blank">
+                            Order Now <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         BENEFITS SECTION
+         ============================================ -->
+    <section class="section benefits" id="benefits">
+        <div class="container">
+            <div class="section-header fade-in">
+                <div class="section-label">
+                    <i class="fas fa-star"></i>
+                    Why Choose Us
+                </div>
+                <h2 class="section-title">
+                    The RGN <span class="accent">Advantage</span>
+                </h2>
+                <p class="section-desc">
+                    We go the extra mile to ensure every product meets the highest standards of quality and purity.
+                </p>
+            </div>
+
+            <div class="benefits-grid stagger-grid" id="benefitsGrid">
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-leaf"></i>
+                    </div>
+                    <h3>Natural Ingredients</h3>
+                    <p>100% pure herbs sourced directly from Sri Lankan farms with no artificial additives or preservatives.</p>
+                </div>
+
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-box"></i>
+                    </div>
+                    <h3>Hygienic Packaging</h3>
+                    <p>Sealed in food-grade packaging to maintain freshness, aroma, and nutritional value for longer.</p>
+                </div>
+
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-gem"></i>
+                    </div>
+                    <h3>Premium Quality</h3>
+                    <p>Every batch undergoes strict quality control to ensure consistent excellence in every pack.</p>
+                </div>
+
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-store"></i>
+                    </div>
+                    <h3>Wholesale & Retail</h3>
+                    <p>Flexible ordering options for individual customers and businesses at competitive prices.</p>
+                </div>
+
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-shipping-fast"></i>
+                    </div>
+                    <h3>Islandwide Delivery</h3>
+                    <p>Fast and reliable delivery across Sri Lanka, bringing nature's goodness to your doorstep.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         CONTACT SECTION
+         ============================================ -->
+    <section class="section contact" id="contact">
+        <div class="container">
+            <div class="section-header fade-in">
+                <div class="section-label">
+                    <i class="fas fa-envelope"></i>
+                    Get In Touch
+                </div>
+                <h2 class="section-title">
+                    Contact <span class="accent">RGN Natural Products</span>
+                </h2>
+                <p class="section-desc">
+                    Ready to experience the power of natural Sri Lankan herbs? Reach out to us today.
+                </p>
+            </div>
+
+            <div class="contact-grid fade-in">
+                <div class="contact-info">
+                    <h3>We'd Love to Hear From You</h3>
+                    <p>Whether you have questions about our products, want to place an order, or are interested in wholesale partnerships, our team is here to help.</p>
+
+                    <div class="contact-methods">
+                        <a href="https://wa.me/94770556913" class="contact-method" target="_blank">
+                            <div class="contact-method-icon whatsapp">
+                                <i class="fab fa-whatsapp"></i>
+                            </div>
+                            <div class="contact-method-info">
+                                <h4>WhatsApp</h4>
+                                <p><a href="https://wa.me/94770556913" target="_blank">+94 770 556 913</a></p>
+                            </div>
+                        </a>
+
+                        <a href="mailto:rgnproducts49@gmail.com" class="contact-method">
+                            <div class="contact-method-icon email">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-method-info">
+                                <h4>Email</h4>
+                                <p><a href="mailto:rgnproducts49@gmail.com">rgnproducts49@gmail.com</a></p>
+                            </div>
+                        </a>
+
+                        <a href="#" class="contact-method" onclick="alert('Visit our Facebook page: RGN Natural Products'); return false;">
+                            <div class="contact-method-icon facebook">
+                                <i class="fab fa-facebook-f"></i>
+                            </div>
+                            <div class="contact-method-info">
+                                <h4>Facebook</h4>
+                                <p>RGN Natural Products</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="contact-cta-box fade-in fade-in-delay-2">
+                    <h3>Order Directly on WhatsApp</h3>
+                    <p>Get quick responses and place your order in just a few taps. We offer islandwide delivery for your convenience.</p>
+                    <a href="https://wa.me/94770556913" class="btn btn-whatsapp" target="_blank">
+                        <i class="fab fa-whatsapp"></i>
+                        Chat on WhatsApp
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         FOOTER
+         ============================================ -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="logo">
+                        <div class="logo-icon">
+                            <i class="fas fa-leaf"></i>
+                        </div>
+                    </div>
+                    <p>RGN Natural Products brings you the finest Sri Lankan herbal leaf powders, processed and packaged with care to preserve nature's goodness.</p>
+                    <div class="footer-social">
+                        <a href="#" onclick="alert('Visit our Facebook page: RGN Natural Products'); return false;" aria-label="Facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://wa.me/94770556913" target="_blank" aria-label="WhatsApp">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                        <a href="mailto:rgnproducts49@gmail.com" aria-label="Email">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home"><i class="fas fa-chevron-right"></i> Home</a></li>
+                        <li><a href="#about"><i class="fas fa-chevron-right"></i> About Us</a></li>
+                        <li><a href="#products"><i class="fas fa-chevron-right"></i> Products</a></li>
+                        <li><a href="#benefits"><i class="fas fa-chevron-right"></i> Benefits</a></li>
+                        <li><a href="#contact"><i class="fas fa-chevron-right"></i> Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-links">
+                    <h4>Our Products</h4>
+                    <ul>
+                        <li><a href="#products"><i class="fas fa-chevron-right"></i> Moringa Powder</a></li>
+                        <li><a href="#products"><i class="fas fa-chevron-right"></i> Curry Leaf Powder</a></li>
+                        <li><a href="#products"><i class="fas fa-chevron-right"></i> Vel Penela Powder</a></li>
+                        <li><a href="#products"><i class="fas fa-chevron-right"></i> Heen Bovitiya Powder</a></li>
+                        <li><a href="#products"><i class="fas fa-chevron-right"></i> Katupila Powder</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-links footer-contact">
+                    <h4>Contact Info</h4>
+                    <p><i class="fab fa-whatsapp"></i> +94 770 556 913</p>
+                    <p><i class="fas fa-envelope"></i> rgnproducts49@gmail.com</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Sri Lanka</p>
+                    <p><i class="fas fa-truck"></i> Islandwide Delivery</p>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p> RGN Natural Products. All Rights Reserved.</p>
+                <p>Made with <span class="heart"><i class="fas fa-heart"></i></span> in Sri Lanka</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ============================================
+         JAVASCRIPT
+         ============================================ -->
+    <script>
+        // ============================================
+        // RGN NATURAL PRODUCTS - JAVASCRIPT
+        // ============================================
+
+        (function() {
+            'use strict';
+
+            // ============================================
+            // DOM Element References
+            // ============================================
+            const navbar = document.getElementById('navbar');
+            const menuToggle = document.getElementById('menuToggle');
+            const navLinks = document.getElementById('navLinks');
+
+            // ============================================
+            // Navbar Scroll Effect
+            // ============================================
+            function handleNavbarScroll() {
+                if (window.scrollY > 50) {
+                    navbar.classList.add('scrolled');
+                } else {
+                    navbar.classList.remove('scrolled');
+                }
+            }
+
+            window.addEventListener('scroll', handleNavbarScroll);
+
+            // ============================================
+            // Mobile Menu Toggle
+            // ============================================
+            menuToggle.addEventListener('click', function() {
+                this.classList.toggle('active');
+                navLinks.classList.toggle('active');
+                document.body.style.overflow = navLinks.classList.contains('active') ? 'hidden' : '';
+            });
+
+            // Close mobile menu when clicking a link
+            navLinks.querySelectorAll('a').forEach(link => {
+                link.addEventListener('click', function() {
+                    menuToggle.classList.remove('active');
+                    navLinks.classList.remove('active');
+                    document.body.style.overflow = '';
+                });
+            });
+
+            // ============================================
+            // Smooth Scroll for Anchor Links
+            // ============================================
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function(e) {
+                    const href = this.getAttribute('href');
+                    if (href === '#') return;
+
+                    const target = document.querySelector(href);
+                    if (target) {
+                        e.preventDefault();
+                        const offsetTop = target.offsetTop - 80;
+                        window.scrollTo({
+                            top: offsetTop,
+                            behavior: 'smooth'
+                        });
+                    }
+                });
+            });
+
+            // ============================================
+            // Intersection Observer for Fade-in Animations
+            // ============================================
+            const observerOptions = {
+                root: null,
+                rootMargin: '0px',
+                threshold: 0.1
+            };
+
+            const fadeObserver = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                    }
+                });
+            }, observerOptions);
+
+            document.querySelectorAll('.fade-in').forEach(el => {
+                fadeObserver.observe(el);
+            });
+
+            // Stagger grid observer
+            const staggerObserver = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                    }
+                });
+            }, { threshold: 0.05 });
+
+            document.querySelectorAll('.stagger-grid').forEach(el => {
+                staggerObserver.observe(el);
+            });
+
+            // ============================================
+            // Active Navigation Link Highlighting
+            // ============================================
+            const sections = document.querySelectorAll('section[id]');
+            const navItems = document.querySelectorAll('.nav-links a[href^="#"]');
+
+            function highlightNavOnScroll() {
+                const scrollPos = window.scrollY + 100;
+
+                sections.forEach(section => {
+                    const sectionTop = section.offsetTop;
+                    const sectionHeight = section.offsetHeight;
+                    const sectionId = section.getAttribute('id');
+
+                    if (scrollPos >= sectionTop && scrollPos < sectionTop + sectionHeight) {
+                        navItems.forEach(item => {
+                            item.classList.remove('active');
+                            if (item.getAttribute('href') === '#' + sectionId) {
+                                item.classList.add('active');
+                            }
+                        });
+                    }
+                });
+            }
+
+            window.addEventListener('scroll', highlightNavOnScroll);
+
+            // ============================================
+            // Parallax Effect for Hero Floating Elements
+            // ============================================
+            const floatLeaves = document.querySelectorAll('.float-leaf');
+
+            function handleParallax() {
+                const scrolled = window.scrollY;
+                floatLeaves.forEach((leaf, index) => {
+                    const speed = 0.3 + (index * 0.1);
+                    leaf.style.transform = 'translateY(' + (scrolled * speed) + 'px) rotate(' + (scrolled * 0.05) + 'deg)';
+                });
+            }
+
+            let ticking = false;
+            window.addEventListener('scroll', function() {
+                if (!ticking) {
+                    window.requestAnimationFrame(function() {
+                        handleParallax();
+                        ticking = false;
+                    });
+                    ticking = true;
+                }
+            });
+
+            // ============================================
+            // Product Card Hover Effects
+            // ============================================
+            document.querySelectorAll('.product-card').forEach(card => {
+                card.addEventListener('mouseenter', function() {
+                    this.style.transition = 'all 0.4s cubic-bezier(0.4, 0, 0.2, 1)';
+                });
+            });
+
+            // ============================================
+            // Click Ripple Effect
+            // ============================================
+            document.querySelectorAll('a, button').forEach(el => {
+                el.addEventListener('click', function(e) {
+                    const ripple = document.createElement('span');
+                    ripple.style.cssText = 'position:absolute;width:20px;height:20px;background:rgba(201,168,76,0.3);border-radius:50%;pointer-events:none;transform:scale(0);animation:ripple 0.6s ease-out;';
+
+                    const style = window.getComputedStyle(this);
+                    if (style.position === 'static') {
+                        this.style.position = 'relative';
+                    }
+                    this.style.overflow = 'hidden';
+                    this.appendChild(ripple);
+
+                    setTimeout(function() { ripple.remove(); }, 600);
+                });
+            });
+
+            // Add ripple keyframes dynamically
+            const styleSheet = document.createElement('style');
+            styleSheet.textContent = '@keyframes ripple { to { transform: scale(4); opacity: 0; } }';
+            document.head.appendChild(styleSheet);
+
+            // ============================================
+            // Initialize on Page Load
+            // ============================================
+            document.addEventListener('DOMContentLoaded', function() {
+                handleNavbarScroll();
+                highlightNavOnScroll();
+
+                document.querySelectorAll('.hero .fade-in').forEach(function(el) {
+                    setTimeout(function() { el.classList.add('visible'); }, 100);
+                });
+            });
+
+            // ============================================
+            // Lazy Load Images (if any added later)
+            // ============================================
+            if ('IntersectionObserver' in window) {
+                const imgObserver = new IntersectionObserver((entries) => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            const img = entry.target;
+                            if (img.dataset.src) {
+                                img.src = img.dataset.src;
+                                img.removeAttribute('data-src');
+                            }
+                            imgObserver.unobserve(img);
+                        }
+                    });
+                });
+
+                document.querySelectorAll('img[data-src]').forEach(img => {
+                    imgObserver.observe(img);
+                });
+            }
+
+        })();
+    </script>
+</body>
+</html>
